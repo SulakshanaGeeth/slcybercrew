@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fill_Ups">
+
+    <Button
+        android:id="@+id/btn_addFill_up"
+        android:layout_width="132dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="36dp"
+        android:text="@string/btn_addFill_up"
+        app:backgroundTint="@color/button_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView3" />
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/toolbar" />
+
+
+    <Spinner
+        android:id="@+id/spn_select_vehicle"
+        android:layout_width="190dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="12dp"
+        android:background="@android:drawable/btn_dropdown"
+        android:spinnerMode="dropdown"
+        app:layout_constraintEnd_toStartOf="@+id/btn_summery"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include" />
+
+    <Button
+        android:id="@+id/btn_summery"
+        android:layout_width="175dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/btn_summery"
+        app:backgroundTint="@color/button_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include" />
+
+
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="355dp"
+        android:layout_height="366dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spn_select_vehicle">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/layout_color"
+                android:padding="7dp">
+
+                <TextView
+                    android:id="@+id/tv_disp_date3"
+                    android:layout_width="54dp"
+                    android:layout_height="28dp"
+                    android:layout_marginStart="90dp"
+                    android:text="@string/tv_disp_date"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tv_disp_date5"
+                    android:layout_width="101dp"
+                    android:layout_height="29dp"
+                    android:layout_marginStart="20dp"
+                    android:text="@string/tv_disp_date5"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/layout_color"
+                android:padding="7dp">
+
+                <TextView
+                    android:id="@+id/tv_disp_litters4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="90dp"
+                    android:text="@string/tv_disp_litters"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tv_disp_litters2"
+                    android:layout_width="51dp"
+                    android:layout_height="21dp"
+                    android:layout_marginStart="30dp"
+                    android:text="@string/tv_disp_litters3"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/layout_color"
+                android:padding="7dp">
+
+                <TextView
+                    android:id="@+id/tv_disp_price3"
+                    android:layout_width="50dp"
+                    android:layout_height="21dp"
+                    android:layout_marginStart="90dp"
+                    android:text="@string/tv_disp_price"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tv_disp_price4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"
+                    android:text="@string/tv_disp_price4"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:background="@color/layout_color"
+                android:padding="7dp">
+
+                <Button
+                    android:id="@+id/btn_editEntry5"
+                    android:layout_width="123dp"
+                    android:layout_height="48dp"
+                    android:layout_marginStart="35dp"
+                    android:text="@string/btn_editEntry"
+                    android:textSize="12sp"
+                    app:backgroundTint="@color/button_color" />
+
+                <Button
+                    android:id="@+id/btn_deleteEntry2"
+                    android:layout_width="139dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:text="@string/btn_deleteEntry"
+                    android:textSize="12sp"
+                    app:backgroundTint="@color/button_color" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/layout_color"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/tv_disp_date"
+                    android:layout_width="54dp"
+                    android:layout_height="28dp"
+                    android:layout_marginStart="90dp"
+                    android:text="@string/tv_disp_date"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tv_disp_date2"
+                    android:layout_width="101dp"
+                    android:layout_height="29dp"
+                    android:layout_marginStart="20dp"
+                    android:text="@string/tv_disp_date2"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/layout_color"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/tv_disp_litters"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="90dp"
+                        android:text="@string/tv_disp_litters"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/tv_disp_litters3"
+                        android:layout_width="51dp"
+                        android:layout_height="21dp"
+                        android:layout_marginStart="30dp"
+                        android:text="@string/tv_disp_litters2"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/layout_color"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/tv_disp_price"
+                    android:layout_width="50dp"
+                    android:layout_height="21dp"
+                    android:layout_marginStart="90dp"
+                    android:text="@string/tv_disp_price"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tv_disp_price2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"
+                    android:text="@string/tv_disp_price2"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/layout_color"
+                android:padding="5dp">
+
+                <Button
+                    android:id="@+id/btn_editEntry3"
+                    android:layout_width="123dp"
+                    android:layout_height="48dp"
+                    android:layout_marginStart="35dp"
+                    android:text="@string/btn_editEntry"
+                    android:textSize="12sp"
+                    app:backgroundTint="@color/button_color" />
+
+                <Button
+                    android:id="@+id/btn_deleteEntry"
+                    android:layout_width="145dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:text="@string/btn_deleteEntry"
+                    android:textSize="12sp"
+                    app:backgroundTint="@color/button_color" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
