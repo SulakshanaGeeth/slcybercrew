@@ -52,4 +52,62 @@
     <string name="tv_cost2">Rs. 3000</string>
     <string name="tv_travel_distance">Traveled Distance</string>
     <string name="tv_travel_distance_ans">1850 km</string>
+
+
+
+    <string name="txt_entmile">Milage</string>
+
+    <string name="btn_ad">Add</string>
+    <string name="btn_upd">Update</string>
+    <string name="btn_dlt">Delete</string>
+    <string name="pic1">TODO</string>
+    <string name="txt_4">Add details</string>
+    <string name="txt_5">carname</string>
+    <string name="txt_6">S.Date</string>
+    <string name="txt_7">S.Milage</string>
+    <string name="et_n" />
+    <string name="et_d" />
+    <string name="et_mi" />
+    <string name="todo">TODO</string>
+    <string name="name">Name</string>
+    <string name="btn_navi">Reminders</string>
+    <string name="txt_12" />
+    <string name="txt_13" />
+    <string name="txt_14" />
+    <string name="btn_add">Add</string>
+    <string name="btn_update">Update</string>
+    <string name="btn_delete">Delete</string>
+    <string name="PIC">pic</string>
+    <string name="txt_20">Reminders</string>
+    <string name="txt_21" >"Reminder"</string>
+    <string name="txt_22" />
+    <string name="txt_23" />
+    <string name="btn_plus">Add</string>
+    <string name="btn_x">Update</string>
+    <string name="btn_y">Delete</string>
+    <string name="txt_31">Update details</string>
+    <string name="txt_32">reminder1</string>
+    <string name="btn_up1">update</string>
+    <string name="txt_33">Reminder2</string>
+    <string name="btn_up2">update</string>
+    <string name="txt_34">Reminder3</string>
+    <string name="btn_up3">update</string>
+    <string name="btn_save" />
+    <string name="btn_save1">Save</string>
+    <string name="txt_41">Delete reminders</string>
+    <string name="txt_42">Reminder1</string>
+    <string name="btn_dlt10">Delete</string>
+    <string name="txt_43">Reminder 2</string>
+    <string name="up_here">Update here</string>
+    <string name="et_upd10" />
+    <string name="btn_upd10">Update</string>
+    <string name="et_upd20" />
+    <string name="txt_51">Update details here</string>
+    <string name="et_upd50" />
+    <string name="btn_upd50">Update</string>
+    <string name="et_l" />
+    <string name="btn_dlt20">Delete</string>
+    <string name="txt_511">"Update "</string>
+    <string name="tv_123">Reminder2</string>
+    <string name="tv_124">Reminder3</string>
 </resources>

@@ -26,5 +26,13 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(picture_intent );
             }
         });
+        LinearLayout reminder = (LinearLayout )findViewById(R.id.ll_Reminder);
+        reminder.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent picture_intent = new Intent(MainActivity.this,Reminder.class);
+                startActivity(picture_intent );
+            }
+        });
     }
 }

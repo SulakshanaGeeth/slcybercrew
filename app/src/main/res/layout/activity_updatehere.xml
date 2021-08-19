@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFE9B5"
+    tools:context=".Updatehere">
+
+    <include layout="@layout/toolbar" />
+
+
+    <TextView
+        android:id="@+id/et_upd10"
+        android:layout_width="213dp"
+        android:layout_height="62dp"
+        android:hint="@string/et_upd10"
+        android:text="@string/up_here"
+        android:textColor="#43A047"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.086" />
+
+    <EditText
+        android:id="@+id/et_upd20"
+        android:layout_width="297dp"
+        android:layout_height="226dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/et_upd20"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.605"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_upd10"
+        app:layout_constraintVertical_bias="0.166" />
+
+    <Button
+        android:id="@+id/btn_upd10"
+        android:layout_width="147dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="128dp"
+        android:text="@string/btn_upd10"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_upd20" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

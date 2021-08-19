@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Reminder">
+
+    <include
+        android:id="@+id/include2"
+        layout="@layout/toolbar"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <TextView
+        android:id="@+id/txt_20"
+        android:layout_width="162dp"
+        android:layout_height="58dp"
+        android:text="@string/txt_20"
+        android:textColor="@color/purple_700"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/txt_21"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/spn_select_vehicle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include2"
+        app:layout_constraintVertical_bias="0.382" />
+
+    <TextView
+        android:id="@+id/txt_21"
+        android:layout_width="172dp"
+        android:layout_height="76dp"
+        android:text="@string/txt_21"
+        android:textSize="20sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tv_123"
+        app:layout_constraintEnd_toStartOf="@+id/tv_123"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_123"
+        android:layout_width="159dp"
+        android:layout_height="82dp"
+        android:text="@string/tv_123"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_124"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/txt_21"
+        app:layout_constraintTop_toBottomOf="@+id/txt_20" />
+
+    <TextView
+        android:id="@+id/tv_124"
+        android:layout_width="184dp"
+        android:layout_height="86dp"
+        android:layout_marginBottom="300dp"
+        android:text="@string/tv_124"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.59"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn_plus"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:text="@string/btn_plus"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btn_x"
+        app:layout_constraintEnd_toStartOf="@+id/btn_x"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn_x"
+        android:layout_width="96dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/btn_x"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btn_plus"
+        app:layout_constraintTop_toBottomOf="@+id/tv_124" />
+
+    <Button
+        android:id="@+id/btn_y"
+        android:layout_width="166dp"
+        android:layout_height="59dp"
+        android:text="@string/btn_y"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_plus" />
+
+    <Spinner
+        android:id="@+id/spn_select_vehicle"
+        android:layout_width="190dp"
+        android:layout_height="66dp"
+        android:layout_marginBottom="52dp"
+        android:background="@android:drawable/btn_dropdown"
+        android:spinnerMode="dropdown"
+        app:layout_constraintBottom_toTopOf="@+id/txt_21"
+        app:layout_constraintEnd_toStartOf="@+id/txt_20"
+        app:layout_constraintHorizontal_bias="0.15"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include2"
+        app:layout_constraintVertical_bias="0.9"
+        tools:ignore="SpeakableTextPresentCheck" />
+</androidx.constraintlayout.widget.ConstraintLayout>
