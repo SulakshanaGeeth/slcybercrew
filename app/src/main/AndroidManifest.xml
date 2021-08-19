@@ -10,6 +10,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AutoCare">
         <activity
+            android:name=".Deletereminders"
+            android:exported="true" />
+        <activity
+            android:name=".UpdateH"
+            android:exported="true" />
+        <activity
+            android:name=".Updatedetails"
+            android:exported="true" />
+        <activity
+            android:name=".Adddetails"
+            android:exported="true" />
+        <activity
+            android:name=".Reminder"
+            android:exported="true" />
+        <activity
             android:name=".Cost_Details"
             android:exported="true" />
         <activity
