@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Adddetails">
+
+    <include layout="@layout/toolbar2" />
+
+
+    <TextView
+        android:id="@+id/txt_4"
+        android:layout_width="145dp"
+        android:layout_height="31dp"
+        android:text="@string/txt_4"
+        android:textColor="#D32F2F"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.118"
+        tools:ignore="TextContrastCheck,TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/txt_5"
+        android:layout_width="155dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="36dp"
+        android:text="@string/txt_5"
+        android:textColor="#00695C"
+        android:textSize="20sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/et_l"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_6"
+        android:layout_width="139dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="36dp"
+        android:text="@string/txt_6"
+        android:textColor="#00695C"
+        android:textSize="20sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/et_d"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.062"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_7"
+        android:layout_width="165dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="36dp"
+        android:text="@string/txt_7"
+        android:textColor="#00695C"
+        android:textSize="20sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/et_mi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.066"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/et_l"
+        android:layout_width="177dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:hint="@string/et_l"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:text="@string/name"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/et_d"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/txt_5"
+        app:layout_constraintTop_toBottomOf="@+id/txt_4" />
+
+    <EditText
+        android:id="@+id/et_d"
+        android:layout_width="184dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:hint="@string/et_d"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/et_mi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/txt_6"
+        app:layout_constraintTop_toBottomOf="@+id/et_l"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <EditText
+        android:id="@+id/et_mi"
+        android:layout_width="170dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:text="@string/et_mi"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/txt_7"
+        app:layout_constraintTop_toBottomOf="@+id/et_d"
+        tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/btn_save1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:text="@string/btn_save1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_7"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
