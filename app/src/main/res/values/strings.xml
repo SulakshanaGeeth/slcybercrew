@@ -111,6 +111,59 @@
     <string name="tv_124">Reminder3</string>
 
 
+ 
+    <string name="addbutton">ad_btn</string>
+    <string name="add_vehicle">Add Vehicle</string>
+    <string name="title_activity_addvehicaldetail">ScrollingActivity</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="addimage">Add Image</string>
+    <string name="model2">Model</string>
+    <string name="makeyear2">Make year</string>
+    <string name="fueltype">Fuel Type</string>
+    <string name="model" />
+    <string name="makeyear" />
+    <string name="licenceno" />
+    <string name="insuarance" />
+    <string name="milage" />
+    <string name="transmission" />
+    <string name="notes" />
+    <string name="modeltest">Model</string>
+    <string name="modelvalue">SMG-1075</string>
+    <string name="modelvalueview">SMG-1050</string>
+    <string name="makeyearview">2011</string>
+    <string name="makeyearviwe">Make Year</string>
+    <string name="makeyearview2">2011</string>
+    <string name="fueltypeview">Fuel Type</string>
+    <string name="fueltypeview2">Petrol</string>
+    <string name="licencenoview">License No.</string>
+    <string name="licencenoview2">BVV-3412</string>
+    <string name="insuarancenoview">Insuarance No</string>
+    <string name="insuarancenoview2">Ceylan-105678456</string>
+    <string name="noteview">Note</string>
+    <string name="Noteview2">Car. This car I buy in 2014</string>
+    <string name="Editvehicledetailbtn">Edit Details</string>
+    <string name="deletedetailsbtn">Delete</string>
+    <string name="editmodel">Model</string>
+    <string name="editmodel2">SMG-1050</string>
+    <string name="editmakeyear">Make Year</string>
+    <string name="editmakeyear2">2011</string>
+    <string name="editfueltype">Fuel Type</string>
+    <string name="editfueltype2">Petrol</string>
+    <string name="editlicenseno">License No.</string>
+    <string name="editlysenseno2">Ceylinco-1234864</string>
+    <string name="editinsuaranceno">Insuarance No</string>
+    <string name="editinsuranceno2">Ceylan-1058456</string>
+    <string name="editnote">Note</string>
+    <string name="editnote2">car.This car I buy in 2014</string>
+    <string name="btn_saveeditdetails">"Save "</string>
+    <string name="dailyearning">Daily Earning</string>
+    <string name="selectvehicle">Select Vehicle</string>
+    <string name="selectweek">Select Week</string>
+    <string name="savedailyearning">SAVE</string>
+    <string name="calculatetotalearningbtn">Calculate Total Earning Of Week</string>
+
     <string name="service_textView">Service</string>
     <string name="ServiceName_textView">Service Name</string>
     <string name="serviceDate_textView">Service Date</string>
@@ -128,4 +181,5 @@
     <string name="addServiceTopic_textView">Add Service Details</string>
     <string name="viewServiceTopic_textView">Service Details</string>
     <string name="addedParts_textView">Added Parts</string>
+
 </resources>
