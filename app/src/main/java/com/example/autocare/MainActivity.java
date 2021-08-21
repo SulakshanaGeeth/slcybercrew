@@ -34,5 +34,14 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(picture_intent );
             }
         });
+
+        LinearLayout service = (LinearLayout )findViewById(R.id.ll_service);
+        service.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent picture_intent = new Intent(MainActivity.this,ServiceInterface.class);
+                startActivity(picture_intent );
+            }
+        });
     }
 }

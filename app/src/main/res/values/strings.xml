@@ -109,4 +109,23 @@
     <string name="txt_511">"Update "</string>
     <string name="tv_123">Reminder2</string>
     <string name="tv_124">Reminder3</string>
+
+
+    <string name="service_textView">Service</string>
+    <string name="ServiceName_textView">Service Name</string>
+    <string name="serviceDate_textView">Service Date</string>
+    <string name="serviceDescription_textView">Service Description</string>
+    <string name="update_btn">Update</string>
+    <string name="delete_btn">Delete</string>
+    <string name="newService_btn">Add New</string>
+    <string name="serviceDate_text">Service Date</string>
+    <string name="serviceKM_textView">Present Meter</string>
+    <string name="nextService_textView">Next Service On</string>
+    <string name="serviceKM_text">2350</string>
+    <string name="serviceDescription_text">Description</string>
+    <string name="nextService_text">4850</string>
+    <string name="done_btn">Done</string>
+    <string name="addServiceTopic_textView">Add Service Details</string>
+    <string name="viewServiceTopic_textView">Service Details</string>
+    <string name="addedParts_textView">Added Parts</string>
 </resources>
