@@ -111,6 +111,7 @@
     <string name="tv_124">Reminder3</string>
 
 
+ 
     <string name="addbutton">ad_btn</string>
     <string name="add_vehicle">Add Vehicle</string>
     <string name="title_activity_addvehicaldetail">ScrollingActivity</string>
@@ -162,4 +163,23 @@
     <string name="selectweek">Select Week</string>
     <string name="savedailyearning">SAVE</string>
     <string name="calculatetotalearningbtn">Calculate Total Earning Of Week</string>
+
+    <string name="service_textView">Service</string>
+    <string name="ServiceName_textView">Service Name</string>
+    <string name="serviceDate_textView">Service Date</string>
+    <string name="serviceDescription_textView">Service Description</string>
+    <string name="update_btn">Update</string>
+    <string name="delete_btn">Delete</string>
+    <string name="newService_btn">Add New</string>
+    <string name="serviceDate_text">Service Date</string>
+    <string name="serviceKM_textView">Present Meter</string>
+    <string name="nextService_textView">Next Service On</string>
+    <string name="serviceKM_text">2350</string>
+    <string name="serviceDescription_text">Description</string>
+    <string name="nextService_text">4850</string>
+    <string name="done_btn">Done</string>
+    <string name="addServiceTopic_textView">Add Service Details</string>
+    <string name="viewServiceTopic_textView">Service Details</string>
+    <string name="addedParts_textView">Added Parts</string>
+
 </resources>
