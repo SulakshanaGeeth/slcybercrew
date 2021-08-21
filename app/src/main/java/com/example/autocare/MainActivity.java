@@ -34,5 +34,27 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(picture_intent );
             }
         });
+
+
+        LinearLayout addvehicle = (LinearLayout )findViewById(R.id.ll_Vehicles);
+        addvehicle.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent picture_intent = new Intent(MainActivity.this,vehicle.class);
+                startActivity(picture_intent );
+            }
+        });
+
+
+        LinearLayout earning = (LinearLayout )findViewById(R.id.ll_earning);
+        earning.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent picture_intent = new Intent(MainActivity.this,dailyearning.class);
+                startActivity(picture_intent );
+            }
+        });
+
+
     }
 }

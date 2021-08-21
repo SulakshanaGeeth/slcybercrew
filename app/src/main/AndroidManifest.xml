@@ -10,6 +10,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AutoCare">
         <activity
+            android:name=".viewvehicle"
+            android:exported="true" />
+        <activity
+            android:name=".entervehicledetail"
+            android:exported="true" />
+        <activity
+            android:name=".editvehicaldetails"
+            android:exported="true" />
+        <activity
+            android:name=".dailyearning"
+            android:exported="true" />
+        <activity
+            android:name=".vehicle"
+            android:exported="true" />
+        <activity
             android:name=".Deletereminders"
             android:exported="true" />
         <activity
