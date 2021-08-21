@@ -10,8 +10,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AutoCare">
         <activity
-                  
-       addvehicle
             android:name=".viewvehicle"
             android:exported="true" />
         <activity
@@ -25,6 +23,8 @@
             android:exported="true" />
         <activity
             android:name=".vehicle"
+            android:exported="true" />
+        <activity
             android:name=".ViewServiceDetails"
             android:exported="true" />
         <activity
@@ -32,7 +32,6 @@
             android:exported="true" />
         <activity
             android:name=".AddService"
-         master
             android:exported="true" />
         <activity
             android:name=".Deletereminders"
