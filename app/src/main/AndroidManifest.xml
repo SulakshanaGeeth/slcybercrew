@@ -10,6 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AutoCare">
         <activity
+            android:name=".ViewServiceDetails"
+            android:exported="true" />
+        <activity
+            android:name=".ServiceInterface"
+            android:exported="true" />
+        <activity
+            android:name=".AddService"
+            android:exported="true" />
+        <activity
             android:name=".Deletereminders"
             android:exported="true" />
         <activity
