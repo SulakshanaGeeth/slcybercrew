@@ -10,9 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AutoCare">
         <activity
-
             android:name=".UpdateActivity"
-
+            android:exported="true" />
+        <activity
             android:name=".Fill_Up_Selectvehicle"
             android:exported="true" />
         <activity
