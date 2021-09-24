@@ -22,11 +22,11 @@
     <string name="tv_add_meter">Odometer</string>
     <string name="et_add_meter">km</string>
     <string name="btn_add_entry">Add Entry</string>
-    <string name="tv_total_cost">Total Cost</string>
-    <string name="tv_fuel_qty">Fuel Qty</string>
-    <string name="tv_fuel_efficiency">Fuel Efficiency</string>
+    <string name="tv_total_cost">Total Cost (Rs.)</string>
+    <string name="tv_fuel_qty">Fuel Qty (litres)</string>
+    <string name="tv_fuel_efficiency">Fuel (km per litre)</string>
     <string name="tv_total_cost_ans">Rs.15000</string>
-    <string name="tv_fuel_qty_ans">20.0 liters</string>
+    <string name="tv_fuel_qty_ans">20.0</string>
     <string name="tv_fuel_efficiency_ans">12.3 km per liter</string>
     <string name="tv_edit_date">Date</string>
     <string name="btn_set_date_edit">Edit Date</string>
@@ -50,7 +50,7 @@
     <string name="tv_cost1">Rs. 2000</string>
     <string name="tv_date2">2021/08/06</string>
     <string name="tv_cost2">Rs. 3000</string>
-    <string name="tv_travel_distance">Traveled Distance</string>
+    <string name="tv_travel_distance">Traveled Distance (km)</string>
     <string name="tv_travel_distance_ans">1850 km</string>
 
 
@@ -109,4 +109,82 @@
     <string name="txt_511">"Update "</string>
     <string name="tv_123">Reminder2</string>
     <string name="tv_124">Reminder3</string>
+
+
+    <string name="addbutton">ad_btn</string>
+    <string name="add_vehicle">Add Vehicle</string>
+    <string name="title_activity_addvehicaldetail">ScrollingActivity</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="addimage">Add Image</string>
+    <string name="model2">Vehicle Name</string>
+    <string name="makeyear2">Make year</string>
+    <string name="fueltype">Fuel Type</string>
+    <string name="model" />
+    <string name="makeyear" />
+    <string name="licenceno" />
+    <string name="insuarance" />
+    <string name="milage" />
+    <string name="transmission" />
+    <string name="notes" />
+    <string name="modeltest">Model</string>
+    <string name="modelvalue">SMG-1075</string>
+    <string name="modelvalueview">SMG-1050</string>
+    <string name="makeyearview">2011</string>
+    <string name="makeyearviwe">Make Year</string>
+    <string name="makeyearview2">2011</string>
+    <string name="fueltypeview">Fuel Type</string>
+    <string name="fueltypeview2">Petrol</string>
+    <string name="licencenoview">License No.</string>
+    <string name="licencenoview2">BVV-3412</string>
+    <string name="insuarancenoview">Insuarance No</string>
+    <string name="insuarancenoview2">Ceylan-105678456</string>
+    <string name="noteview">Note</string>
+    <string name="Noteview2">Car. This car I buy in 2014</string>
+    <string name="Editvehicledetailbtn">Edit Details</string>
+    <string name="deletedetailsbtn">Delete</string>
+    <string name="editmodel">Model</string>
+    <string name="editmodel2">SMG-1050</string>
+    <string name="editmakeyear">Make Year</string>
+    <string name="editmakeyear2">2011</string>
+    <string name="editfueltype">Fuel Type</string>
+    <string name="editfueltype2">Petrol</string>
+    <string name="editlicenseno">License No.</string>
+    <string name="editlysenseno2">Ceylinco-1234864</string>
+    <string name="editinsuaranceno">Insuarance No</string>
+    <string name="editinsuranceno2">Ceylan-1058456</string>
+    <string name="editnote">Note</string>
+    <string name="editnote2">car.This car I buy in 2014</string>
+    <string name="btn_saveeditdetails">"Save "</string>
+    <string name="dailyearning">Daily Earning</string>
+    <string name="selectvehicle">Select Vehicle</string>
+    <string name="selectweek">Select Week</string>
+    <string name="savedailyearning">SAVE</string>
+    <string name="calculatetotalearningbtn">Calculate Total Earning Of Week</string>
+
+    <string name="service_textView">Service</string>
+    <string name="ServiceName_textView">Service Name</string>
+    <string name="serviceDate_textView">Service Date</string>
+    <string name="serviceDescription_textView">Service Description</string>
+    <string name="update_btn">Update</string>
+    <string name="delete_btn">Delete</string>
+    <string name="newService_btn">Add New</string>
+    <string name="serviceDate_text">Service Date</string>
+    <string name="serviceKM_textView">Present Meter</string>
+    <string name="nextService_textView">Next Service On</string>
+    <string name="serviceKM_text">2350</string>
+    <string name="serviceDescription_text">Description</string>
+    <string name="nextService_text">4850</string>
+    <string name="done_btn">Done</string>
+    <string name="addServiceTopic_textView">Add Service Details</string>
+    <string name="viewServiceTopic_textView">Service Details</string>
+    <string name="addedParts_textView">Added Parts</string>
+    <string name="et_set_fill_date">Year/Month/Day</string>
+    <string name="btn_delete_entry">Delete Entry</string>
+    <string name="tv_fillUp_select_vehicle">Please Select Vehicle</string>
+    <string name="btn_fill_up_select">Next</string>
+    <string name="tv_fill_up_select_vehicle">Vehicle Model</string>
+    <string name="tv_fill_UP_display_model">Vehicle Model</string>
+
 </resources>

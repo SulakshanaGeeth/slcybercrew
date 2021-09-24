@@ -9,25 +9,26 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class Cost_Details extends AppCompatActivity {
+public class AddService extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_cost_details);
+        setContentView(R.layout.activity_add_service);
+
+        TextView title = findViewById(R.id.toolbar_app_name);
 
         ImageView backIcon = findViewById(R.id.back_btn);
-        TextView title = findViewById(R.id.toolbar_app_name);
 
         backIcon.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(Cost_Details.this,"You clicked back button", Toast.LENGTH_SHORT).show();
-                Intent intent = new Intent(Cost_Details.this,Fill_Up_Summary.class);
+                Toast.makeText(AddService.this,"You clicked back button", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(AddService.this,ServiceInterface.class);
                 startActivity(intent);
             }
         });
 
-        title.setText("Cost Details ");
+        title.setText("Add Service Details");
     }
 }
