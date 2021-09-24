@@ -4,13 +4,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Adddetails">
+    tools:context=".UpdateActivity">
 
 
-    <include layout="@layout/toolbar2" />
+    <include
+        layout="@layout/toolbar2"
+        android:layout_width="413dp"
+        android:layout_height="66dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/title_input"
+        android:id="@+id/title_input3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="150dp"
@@ -24,7 +29,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/date_input"
+        android:id="@+id/date_input3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -34,10 +39,10 @@
         android:minHeight="48dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/title_input" />
+        app:layout_constraintTop_toBottomOf="@+id/title_input3" />
 
     <EditText
-        android:id="@+id/mileage_input"
+        android:id="@+id/mileage_input3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -48,17 +53,30 @@
         android:minHeight="48dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/date_input" />
+        app:layout_constraintTop_toBottomOf="@+id/date_input3" />
 
     <Button
-        android:id="@+id/add_button"
+        android:id="@+id/update_button3"
         android:layout_width="match_parent"
         android:layout_height="70dp"
         android:layout_marginTop="40dp"
-        android:text="Add"
+        android:text="UPDATE"
         android:textSize="20sp"
         android:textAllCaps="false"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/mileage_input" />
+        app:layout_constraintTop_toBottomOf="@+id/mileage_input3" />
+
+
+    <Button
+        android:id="@+id/delete_button4"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="40dp"
+        android:text="DELETE"
+        android:textSize="20sp"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/update_button3" />
 </androidx.constraintlayout.widget.ConstraintLayout>
