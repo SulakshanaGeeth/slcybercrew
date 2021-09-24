@@ -22,11 +22,11 @@
     <string name="tv_add_meter">Odometer</string>
     <string name="et_add_meter">km</string>
     <string name="btn_add_entry">Add Entry</string>
-    <string name="tv_total_cost">Total Cost</string>
-    <string name="tv_fuel_qty">Fuel Qty</string>
-    <string name="tv_fuel_efficiency">Fuel Efficiency</string>
+    <string name="tv_total_cost">Total Cost (Rs.)</string>
+    <string name="tv_fuel_qty">Fuel Qty (litres)</string>
+    <string name="tv_fuel_efficiency">Fuel (km per litre)</string>
     <string name="tv_total_cost_ans">Rs.15000</string>
-    <string name="tv_fuel_qty_ans">20.0 liters</string>
+    <string name="tv_fuel_qty_ans">20.0</string>
     <string name="tv_fuel_efficiency_ans">12.3 km per liter</string>
     <string name="tv_edit_date">Date</string>
     <string name="btn_set_date_edit">Edit Date</string>
@@ -50,7 +50,7 @@
     <string name="tv_cost1">Rs. 2000</string>
     <string name="tv_date2">2021/08/06</string>
     <string name="tv_cost2">Rs. 3000</string>
-    <string name="tv_travel_distance">Traveled Distance</string>
+    <string name="tv_travel_distance">Traveled Distance (km)</string>
     <string name="tv_travel_distance_ans">1850 km</string>
 
 
@@ -111,7 +111,6 @@
     <string name="tv_124">Reminder3</string>
 
 
- 
     <string name="addbutton">ad_btn</string>
     <string name="add_vehicle">Add Vehicle</string>
     <string name="title_activity_addvehicaldetail">ScrollingActivity</string>
@@ -181,5 +180,11 @@
     <string name="addServiceTopic_textView">Add Service Details</string>
     <string name="viewServiceTopic_textView">Service Details</string>
     <string name="addedParts_textView">Added Parts</string>
+    <string name="et_set_fill_date">Year/Month/Day</string>
+    <string name="btn_delete_entry">Delete Entry</string>
+    <string name="tv_fillUp_select_vehicle">Please Select Vehicle</string>
+    <string name="btn_fill_up_select">Next</string>
+    <string name="tv_fill_up_select_vehicle">Vehicle Model</string>
+    <string name="tv_fill_UP_display_model">Vehicle Model</string>
 
 </resources>
