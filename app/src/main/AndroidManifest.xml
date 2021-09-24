@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AutoCare">
         <activity
+            android:name=".Fill_Up_Selectvehicle"
+            android:exported="true" />
+        <activity
             android:name=".viewvehicle"
             android:exported="true" />
         <activity
@@ -49,16 +52,13 @@
             android:name=".Reminder"
             android:exported="true" />
         <activity
-            android:name=".Cost_Details"
-            android:exported="true" />
-        <activity
-            android:name=".Edit_Fill_Up"
+            android:name=".Fill_Up_Update"
             android:exported="true" />
         <activity
             android:name=".Fill_Up_Summary"
             android:exported="true" />
         <activity
-            android:name=".Add_Fill_Up"
+            android:name=".Fill_Up_Add"
             android:exported="true" />
         <activity
             android:name=".Fill_Ups"
