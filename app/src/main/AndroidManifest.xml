@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AutoCare">
         <activity
+            android:name=".UpdateService"
+            android:exported="true" />
+      <activity
+            android:name=".UpdateActivity"
+            android:exported="true" />
+        <activity
             android:name=".Fill_Up_Selectvehicle"
             android:exported="true" />
         <activity
@@ -35,6 +41,7 @@
             android:exported="true" />
         <activity
             android:name=".AddService"
+
             android:exported="true" />
         <activity
             android:name=".Deletereminders"
