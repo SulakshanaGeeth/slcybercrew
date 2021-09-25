@@ -180,6 +180,7 @@
     <string name="addServiceTopic_textView">Add Service Details</string>
     <string name="viewServiceTopic_textView">Service Details</string>
     <string name="addedParts_textView">Added Parts</string>
+    <string name="tv_total">Total Cost for the Service</string>
     <string name="et_set_fill_date">Year/Month/Day</string>
     <string name="btn_delete_entry">Delete Entry</string>
     <string name="tv_fillUp_select_vehicle">Please Select Vehicle</string>
