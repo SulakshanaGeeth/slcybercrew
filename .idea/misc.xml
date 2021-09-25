@@ -29,6 +29,15 @@
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/AutoCare/app/src/main/res/layout/activity_main.xml" value="0.264" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/AutoCare/app/src/main/res/layout/toolbar.xml" value="0.264" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/AutoCare/app/src/main/res/layout/toolbar2.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/MAD Project New/app/src/main/res/drawable/fill_up_grandiant_background.xml" value="0.2703125" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/MAD Project New/app/src/main/res/drawable/fill_up_grandiant_background2.xml" value="0.2703125" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/MAD Project New/app/src/main/res/layout/activity_fill_up_add.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/MAD Project New/app/src/main/res/layout/activity_fill_up_selectvehicle.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/MAD Project New/app/src/main/res/layout/activity_fill_up_summary.xml" value="0.4" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/MAD Project New/app/src/main/res/layout/activity_fill_up_update.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/MAD Project New/app/src/main/res/layout/activity_fill_ups.xml" value="0.4" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/MAD Project New/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/MAD Project New/app/src/main/res/layout/fillup_row.xml" value="0.6229086229086229" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/slcybercrew/app/src/main/res/drawable/ic_fillup_empty.xml" value="0.2703125" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/slcybercrew/app/src/main/res/drawable/text_view_border.xml" value="0.26614583333333336" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/slcybercrew/app/src/main/res/layout/activity_add_fill_up.xml" value="0.264" />
@@ -51,11 +60,14 @@
         <entry key="..\:/Users/NGC/AndroidStudioProjects/slcybercrew/app/src/main/res/layout/activity_main.xml" value="0.18" />
         <entry key="..\:/Users/NGC/AndroidStudioProjects/slcybercrew/app/src/main/res/layout/activity_vehicle.xml" value="0.1" />
         <entry key="..\:/Users/NGC/AndroidStudioProjects/slcybercrew/app/src/main/res/layout/activity_viewvehicle.xml" value="0.1" />
+
+
         <entry key="..\:/Users/usre/AndroidStudioProjects/MAD/app/src/main/res/drawable/gradient_background3.xml" value="0.1" />
         <entry key="..\:/Users/usre/AndroidStudioProjects/MAD/app/src/main/res/layout/activity_adddetails.xml" value="0.18697916666666667" />
         <entry key="..\:/Users/usre/AndroidStudioProjects/MAD/app/src/main/res/layout/activity_reminder.xml" value="0.18697916666666667" />
         <entry key="..\:/Users/usre/AndroidStudioProjects/MAD/app/src/main/res/layout/activity_update.xml" value="0.25" />
         <entry key="..\:/Users/usre/AndroidStudioProjects/MAD/app/src/main/res/layout/activity_updatedetails.xml" value="0.18697916666666667" />
+
         <entry key="..\:/Users/usre/AndroidStudioProjects/slcybercrew/app/src/main/res/layout/activity_adddetails.xml" value="0.1875" />
         <entry key="..\:/Users/usre/AndroidStudioProjects/slcybercrew/app/src/main/res/layout/activity_update.xml" value="0.25" />
       </map>
