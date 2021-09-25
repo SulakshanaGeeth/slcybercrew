@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout
-     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_height="match_parent"
     android:layout_width="match_parent"
     android:background="@drawable/service_gradient_background"
-        tools:context=".AddService">
+    tools:context=".UpdateService">
 
-        <include
-            android:id="@+id/include"
-            layout="@layout/toolbar2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            tools:layout_editor_absoluteX="0dp"
-            tools:layout_editor_absoluteY="2dp" />
+    <include
+        android:id="@+id/include"
+        layout="@layout/toolbar2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="2dp" />
 
     <EditText
-        android:id="@+id/input_type"
+        android:id="@+id/input_type2"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="110dp"
@@ -31,7 +31,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/input_date"
+        android:id="@+id/input_date2"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
@@ -42,10 +42,10 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/input_type" />
+        app:layout_constraintTop_toBottomOf="@+id/input_type2" />
 
     <EditText
-        android:id="@+id/input_description"
+        android:id="@+id/input_description2"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
@@ -57,23 +57,36 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/input_date" />
+        app:layout_constraintTop_toBottomOf="@+id/input_date2" />
 
     <Button
-        android:id="@+id/btn_addService"
+        android:id="@+id/btn_updateService"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
         android:layout_marginTop="40dp"
         android:layout_marginBottom="16dp"
-        android:text="Add Service"
+        android:text="Update Service"
         app:backgroundTint="@color/button_color"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/input_total" />
+        app:layout_constraintTop_toBottomOf="@+id/input_total2"
+        app:layout_constraintVertical_bias="0.063" />
+
+    <Button
+        android:id="@+id/btn_deleteService"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="28dp"
+        android:text="Delete Service"
+        app:backgroundTint="@color/button_color"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btn_updateService"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.944"
+        app:layout_constraintStart_toEndOf="@+id/btn_updateService" />
 
     <EditText
-        android:id="@+id/input_present"
+        android:id="@+id/input_present2"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
@@ -84,10 +97,10 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/input_description" />
+        app:layout_constraintTop_toBottomOf="@+id/input_description2" />
 
     <EditText
-        android:id="@+id/input_next"
+        android:id="@+id/input_next2"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
@@ -98,10 +111,10 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/input_present" />
+        app:layout_constraintTop_toBottomOf="@+id/input_present2" />
 
     <EditText
-        android:id="@+id/input_total"
+        android:id="@+id/input_total2"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
@@ -112,7 +125,7 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/input_next" />
+        app:layout_constraintTop_toBottomOf="@+id/input_next2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 

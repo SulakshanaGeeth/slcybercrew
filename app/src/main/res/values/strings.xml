@@ -128,4 +128,5 @@
     <string name="addServiceTopic_textView">Add Service Details</string>
     <string name="viewServiceTopic_textView">Service Details</string>
     <string name="addedParts_textView">Added Parts</string>
+    <string name="tv_total">Total Cost for the Service</string>
 </resources>
