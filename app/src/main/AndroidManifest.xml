@@ -13,7 +13,6 @@
 
             android:name=".UpdateActivity"
 
-            android:name=".Fill_Up_Selectvehicle"
             android:exported="true" />
         <activity
             android:name=".viewvehicle"
