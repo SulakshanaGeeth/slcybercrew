@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
         fill_up.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent picture_intent = new Intent(MainActivity.this,Fill_Ups.class);
+                Intent picture_intent = new Intent(MainActivity.this,Fill_Up_Selectvehicle.class);
                 startActivity(picture_intent );
             }
         });
@@ -35,6 +35,29 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+
+
+        LinearLayout addvehicle = (LinearLayout )findViewById(R.id.ll_Vehicles);
+        addvehicle.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent picture_intent = new Intent(MainActivity.this,vehicle.class);
+                startActivity(picture_intent );
+            }
+        });
+
+
+        LinearLayout earning = (LinearLayout )findViewById(R.id.ll_earning);
+        earning.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent picture_intent = new Intent(MainActivity.this,dailyearning.class);
+                startActivity(picture_intent );
+            }
+        });
+
+
+
         LinearLayout service = (LinearLayout )findViewById(R.id.ll_service);
         service.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -43,5 +66,6 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(picture_intent );
             }
         });
+
     }
 }

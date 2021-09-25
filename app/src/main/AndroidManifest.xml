@@ -12,6 +12,27 @@
         <activity
             android:name=".UpdateService"
             android:exported="true" />
+      <activity
+            android:name=".UpdateActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Fill_Up_Selectvehicle"
+            android:exported="true" />
+        <activity
+            android:name=".viewvehicle"
+            android:exported="true" />
+        <activity
+            android:name=".entervehicledetail"
+            android:exported="true" />
+        <activity
+            android:name=".editvehicaldetails"
+            android:exported="true" />
+        <activity
+            android:name=".dailyearning"
+            android:exported="true" />
+        <activity
+            android:name=".vehicle"
+            android:exported="true" />
         <activity
             android:name=".ViewServiceDetails"
             android:exported="true" />
@@ -20,6 +41,7 @@
             android:exported="true" />
         <activity
             android:name=".AddService"
+
             android:exported="true" />
         <activity
             android:name=".Deletereminders"
@@ -37,16 +59,13 @@
             android:name=".Reminder"
             android:exported="true" />
         <activity
-            android:name=".Cost_Details"
-            android:exported="true" />
-        <activity
-            android:name=".Edit_Fill_Up"
+            android:name=".Fill_Up_Update"
             android:exported="true" />
         <activity
             android:name=".Fill_Up_Summary"
             android:exported="true" />
         <activity
-            android:name=".Add_Fill_Up"
+            android:name=".Fill_Up_Add"
             android:exported="true" />
         <activity
             android:name=".Fill_Ups"

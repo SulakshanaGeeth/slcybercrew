@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/fillUp_mainLayout"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:background="#f7fffa">
+
+
+
+            <TextView
+                android:id="@+id/tv_fillUp_litters"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="TextView"
+                android:textColor="@color/black"
+                android:textSize="22sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/textView37"
+                app:layout_constraintTop_toBottomOf="@+id/tv_fillUp_date" />
+
+            <TextView
+                android:id="@+id/tv_fillUp_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="TextView"
+                android:textColor="@color/black"
+                android:textSize="22sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/textView38"
+                app:layout_constraintTop_toBottomOf="@+id/tv_fillUp_litters" />
+
+            <TextView
+                android:id="@+id/tv_fillUp_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="96dp"
+                android:text="TextView"
+                android:textColor="@color/black"
+                android:textSize="22sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView35"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="116dp"
+                android:text="ID"
+                android:textColor="@color/black"
+                android:textSize="22sp"
+                app:layout_constraintBaseline_toBaselineOf="@+id/tv_fillUp_id"
+                app:layout_constraintEnd_toStartOf="@+id/tv_fillUp_id"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_fillUp_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="TextView"
+                android:textColor="@color/black"
+                android:textSize="22sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.544"
+                app:layout_constraintStart_toEndOf="@+id/textView36"
+                app:layout_constraintTop_toBottomOf="@+id/tv_fillUp_id" />
+
+            <TextView
+                android:id="@+id/tv_fillUp_meter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="60dp"
+                android:text="TextView"
+                android:textColor="@color/black"
+                android:textSize="22sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_fillUp_price" />
+
+            <TextView
+                android:id="@+id/textView36"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="104dp"
+                android:text="Date"
+                android:textColor="@color/black"
+                android:textSize="22sp"
+                app:layout_constraintBaseline_toBaselineOf="@+id/tv_fillUp_date"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/textView37"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Litters"
+                android:textColor="@color/black"
+                android:textSize="22sp"
+                app:layout_constraintBaseline_toBaselineOf="@+id/tv_fillUp_litters"
+                app:layout_constraintEnd_toStartOf="@+id/tv_fillUp_litters"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/textView38"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Price (Rs.)"
+                android:textColor="@color/black"
+                android:textSize="22sp"
+                app:layout_constraintBaseline_toBaselineOf="@+id/tv_fillUp_price"
+                app:layout_constraintEnd_toStartOf="@+id/tv_fillUp_price"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/textView39"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:text="Odometer (km)"
+                android:textColor="@color/black"
+                android:textSize="22sp"
+                app:layout_constraintBaseline_toBaselineOf="@+id/tv_fillUp_meter"
+                app:layout_constraintEnd_toStartOf="@+id/tv_fillUp_meter"
+                app:layout_constraintHorizontal_bias="0.417"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="8dp"
+                android:background="@android:color/darker_gray"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.333"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView39"
+                app:layout_constraintVertical_bias="0.333" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
