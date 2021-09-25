@@ -10,14 +10,14 @@
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
         >
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="12dp"
-            android:background="#f7fffa">
 
+            android:background="@drawable/fill_up_grandiant_background2">
 
 
             <TextView
@@ -29,7 +29,7 @@
                 android:textColor="@color/black"
                 android:textSize="22sp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintHorizontal_bias="0.588"
                 app:layout_constraintStart_toEndOf="@+id/textView37"
                 app:layout_constraintTop_toBottomOf="@+id/tv_fillUp_date" />
 
@@ -37,13 +37,12 @@
                 android:id="@+id/tv_fillUp_price"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="80dp"
                 android:text="TextView"
                 android:textColor="@color/black"
                 android:textSize="22sp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.5"
-                app:layout_constraintStart_toEndOf="@+id/textView38"
                 app:layout_constraintTop_toBottomOf="@+id/tv_fillUp_litters" />
 
             <TextView
@@ -80,7 +79,7 @@
                 android:textColor="@color/black"
                 android:textSize="22sp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.544"
+                app:layout_constraintHorizontal_bias="0.652"
                 app:layout_constraintStart_toEndOf="@+id/textView36"
                 app:layout_constraintTop_toBottomOf="@+id/tv_fillUp_id" />
 
@@ -88,8 +87,8 @@
                 android:id="@+id/tv_fillUp_meter"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:layout_marginEnd="60dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="73dp"
                 android:text="TextView"
                 android:textColor="@color/black"
                 android:textSize="22sp"
@@ -111,12 +110,11 @@
                 android:id="@+id/textView37"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="96dp"
                 android:text="Litters"
                 android:textColor="@color/black"
                 android:textSize="22sp"
                 app:layout_constraintBaseline_toBaselineOf="@+id/tv_fillUp_litters"
-                app:layout_constraintEnd_toStartOf="@+id/tv_fillUp_litters"
-                app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toStartOf="parent" />
 
             <TextView
@@ -128,7 +126,7 @@
                 android:textSize="22sp"
                 app:layout_constraintBaseline_toBaselineOf="@+id/tv_fillUp_price"
                 app:layout_constraintEnd_toStartOf="@+id/tv_fillUp_price"
-                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintHorizontal_bias="0.485"
                 app:layout_constraintStart_toStartOf="parent" />
 
             <TextView
@@ -141,15 +139,14 @@
                 android:textSize="22sp"
                 app:layout_constraintBaseline_toBaselineOf="@+id/tv_fillUp_meter"
                 app:layout_constraintEnd_toStartOf="@+id/tv_fillUp_meter"
-                app:layout_constraintHorizontal_bias="0.417"
+                app:layout_constraintHorizontal_bias="0.296"
                 app:layout_constraintStart_toStartOf="parent" />
 
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
                 android:layout_marginTop="16dp"
-                android:layout_marginBottom="8dp"
-                android:background="@android:color/darker_gray"
+                android:background="@android:color/black"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.333"

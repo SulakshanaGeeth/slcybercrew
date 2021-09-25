@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Fill_Up_Add"
-    android:background="#d7e0da">
+    android:background="@drawable/fill_up_grandiant_background">
 
     <include
         android:id="@+id/include3"
@@ -15,7 +15,7 @@
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:layout_marginTop="72dp"
-        android:background="@android:color/darker_gray"
+        android:background="@android:color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -25,7 +25,7 @@
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:layout_marginTop="16dp"
-        android:background="@android:color/darker_gray"
+        android:background="@android:color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
