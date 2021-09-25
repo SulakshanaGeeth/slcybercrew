@@ -92,7 +92,7 @@ public class Reminder extends AppCompatActivity {
         Cursor cursor = myDB.readAllData();
         if (cursor.getCount() == 0) {
 
-            no_data.setVisibility(View.VISIBLE);
+            Toast.makeText(Reminder.this, "No data", Toast.LENGTH_SHORT).show();
         } else {
             while (cursor.moveToNext()) {
                 car_id.add(cursor.getString(0));
