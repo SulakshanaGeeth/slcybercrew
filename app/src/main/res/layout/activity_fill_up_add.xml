@@ -62,7 +62,7 @@
         android:layout_marginStart="36dp"
         android:ems="10"
         android:hint="@string/et_add_quentity"
-        android:inputType="textPersonName"
+        android:inputType="numberDecimal"
         app:layout_constraintBaseline_toBaselineOf="@+id/tv_add_quentity"
         app:layout_constraintStart_toEndOf="@+id/tv_add_quentity" />
 
@@ -85,7 +85,7 @@
         android:layout_marginStart="36dp"
         android:ems="10"
         android:hint="@string/et_add_price"
-        android:inputType="textPersonName"
+        android:inputType="numberDecimal"
         app:layout_constraintBaseline_toBaselineOf="@+id/tv_add_price"
         app:layout_constraintStart_toEndOf="@+id/tv_add_price" />
 
@@ -108,7 +108,7 @@
         android:layout_marginStart="36dp"
         android:ems="10"
         android:hint="@string/et_add_meter"
-        android:inputType="textPersonName"
+        android:inputType="numberDecimal"
         android:textColor="@color/black"
         app:layout_constraintBaseline_toBaselineOf="@+id/tv_add_meter"
         app:layout_constraintStart_toEndOf="@+id/tv_add_meter" />
@@ -142,7 +142,7 @@
         android:layout_marginStart="40dp"
         android:ems="10"
         android:hint="@string/et_set_fill_date"
-        android:inputType="textPersonName"
+        android:inputType="none"
         app:layout_constraintBaseline_toBaselineOf="@+id/tv_add_date"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
