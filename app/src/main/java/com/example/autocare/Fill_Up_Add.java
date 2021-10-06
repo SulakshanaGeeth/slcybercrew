@@ -9,12 +9,18 @@ import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.basgeekball.awesomevalidation.AwesomeValidation;
+import com.basgeekball.awesomevalidation.ValidationStyle;
+import com.basgeekball.awesomevalidation.utility.RegexTemplate;
 
 import java.util.Calendar;
 
@@ -37,8 +43,16 @@ public class Fill_Up_Add extends AppCompatActivity {
         EditText odometer = findViewById(R.id.et_add_meter);
         Button addButton = findViewById(R.id.btn_add_entry);
 
+        AwesomeValidation awesomeValidation = new AwesomeValidation(ValidationStyle.BASIC);
 
-
+        awesomeValidation.addValidation(this,R.id.et_set_fill_date,
+                RegexTemplate.NOT_EMPTY,R.string.fill_up_input_empty);
+        awesomeValidation.addValidation(this,R.id.et_add_quentity,
+                RegexTemplate.NOT_EMPTY,R.string.fill_up_input_empty);
+        awesomeValidation.addValidation(this,R.id.et_add_price,
+                RegexTemplate.NOT_EMPTY,R.string.fill_up_input_empty);
+        awesomeValidation.addValidation(this,R.id.et_add_meter,
+                RegexTemplate.NOT_EMPTY,R.string.fill_up_input_empty);
 
         Calendar calendar = Calendar.getInstance();
 
@@ -90,20 +104,26 @@ public class Fill_Up_Add extends AppCompatActivity {
 
 
 
-
         addButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                FillUpsDatabaseHelper mydb = new FillUpsDatabaseHelper(Fill_Up_Add.this);
-                mydb.addFillUp (vehicle_model,date.getText().toString().trim(),
-                        Integer.valueOf(quantity.getText().toString().trim()),
-                        Integer.valueOf(price.getText().toString().trim()),
-                        Integer.valueOf(odometer.getText().toString().trim()));
-                Intent intent = new Intent(getApplicationContext(), Fill_Ups.class);
-                intent.putExtra("selectItem", vehicle_model );
-                startActivity(intent);
-            }
-        });
+                if (awesomeValidation.validate()) {
+                    FillUpsDatabaseHelper mydb = new FillUpsDatabaseHelper(Fill_Up_Add.this);
+                    mydb.addFillUp(vehicle_model, date.getText().toString().trim(),
+                            Integer.valueOf(quantity.getText().toString().trim()),
+                            Integer.valueOf(price.getText().toString().trim()),
+                            Integer.valueOf(odometer.getText().toString().trim()));
+                    Intent intent = new Intent(getApplicationContext(), Fill_Ups.class);
+                    intent.putExtra("selectItem", vehicle_model);
+                    startActivity(intent);
+                } else {
+                    Toast.makeText(getApplicationContext(), "Validation Faild",
+                            Toast.LENGTH_SHORT).show();
+                    Animation animation = AnimationUtils.loadAnimation(Fill_Up_Add.this,R.anim.bounce);
+                    addButton.startAnimation(animation);
+                }
+                }
+             });
 
+            }
     }
-}

@@ -151,8 +151,8 @@ public class Fill_Up_Update extends AppCompatActivity {
 
     void confirmDialog(){
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setTitle("Delete " + date + " ?");
-        builder.setMessage("Are you sure you want to delete "+ date + "?");
+        builder.setTitle("Delete " + date + " Date Entry?");
+        builder.setMessage("Are you sure you want to delete "+ date + " Date Entry?");
         builder.setPositiveButton("Yes", new DialogInterface.OnClickListener(){
 
             @Override

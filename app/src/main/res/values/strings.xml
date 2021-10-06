@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">AutoCare</string>
     <string name="btn_addFill_up">Add Fill-Up</string>
-    <string name="btn_summery">View Summery</string>
+    <string name="btn_summery">Fuel Efficiency</string>
     <string name="tv_disp_date">Date</string>
     <string name="tv_disp_date2">2021/08/01</string>
     <string name="tv_disp_litters">Litters</string>
@@ -187,5 +187,8 @@
     <string name="btn_fill_up_select">Next</string>
     <string name="tv_fill_up_select_vehicle">Vehicle Model</string>
     <string name="tv_fill_UP_display_model">Vehicle Model</string>
+    <string name="fill_up_input_empty">Please Fill this input field</string>
+    <string name="fill_up_input_quantity">Enter Quantity between 1 to 99</string>
+    <string name="fill_up_input_price">Price can be between 1 to 99999</string>
 
 </resources>

@@ -12,13 +12,14 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
 public class Fill_Up_Selectvehicle extends AppCompatActivity {
 
-    FillUpsDatabaseHelper myDB;
-    ArrayList<String> fillUP_id,fillUP_model,fillUP_date,fillUp_quantity, fillUp_price, fillUP_meter;
+    AddVehicleDatabaseHelper myDB;
+    ArrayList<String> vehicle_id,vehicle_name,vehicle_year, vehicle_no, vehicle_details,vehicle_insuranceno,vehicle_fuel_type;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,21 +41,22 @@ public class Fill_Up_Selectvehicle extends AppCompatActivity {
             }
         });
 
-        myDB = new FillUpsDatabaseHelper(Fill_Up_Selectvehicle.this);
-        fillUP_id = new ArrayList<>();
-        fillUP_model = new ArrayList<>();
-        fillUP_date = new ArrayList<>();
-        fillUp_quantity = new ArrayList<>();
-        fillUp_price = new ArrayList<>();
-        fillUP_meter = new ArrayList<>();
+        myDB = new AddVehicleDatabaseHelper(Fill_Up_Selectvehicle.this);
+        vehicle_id = new ArrayList<>();
+        vehicle_name = new ArrayList<>();
+        vehicle_year = new ArrayList<>();
+        vehicle_no = new ArrayList<>();
+        vehicle_details = new ArrayList<>();
+        vehicle_insuranceno = new ArrayList<>();
+        vehicle_fuel_type = new ArrayList<>();
 
         storeDataInArrays();
 
 
         Spinner dropdown = findViewById(R.id.spn_fill_up_select_vehicle);
         String[] items = new String[]{"Toyota", "Nissan", "Honda"};
-        ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_dropdown_item, items);
-//        ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_dropdown_item, fillUP_model);
+
+        ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_dropdown_item, vehicle_name);
         dropdown.setAdapter(adapter);
 
         Button next = findViewById(R.id.btn_fill_up_select);
@@ -62,7 +64,7 @@ public class Fill_Up_Selectvehicle extends AppCompatActivity {
         next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-//                Intent intent = new Intent(Fill_Up_Selectvehicle.this,Fill_Ups.class);
+
                 Intent intent = new Intent(getApplicationContext(), Fill_Ups.class);
                 String select = dropdown.getSelectedItem().toString();
                 Log.d("selectItem",select);
@@ -76,18 +78,18 @@ public class Fill_Up_Selectvehicle extends AppCompatActivity {
 
     void storeDataInArrays(){
         Cursor cursor = myDB.readAllData();
-        if(cursor.getCount() == 0){
-
+        if(cursor.getCount()==0){
+            Toast.makeText(this,"no data",Toast.LENGTH_SHORT).show();
         }
         else{
-            while(cursor.moveToNext()){
-                fillUP_id.add(cursor.getString(0));
-                fillUP_model.add(cursor.getString(1));
-                fillUP_date.add(cursor.getString(2));
-                fillUp_quantity.add(cursor.getString(3));
-                fillUp_price.add(cursor.getString(4));
-                fillUP_meter.add(cursor.getString(5));
-
+            while(cursor.moveToNext()) {
+                vehicle_id.add(cursor.getString(0));
+                vehicle_name.add(cursor.getString(1));
+                vehicle_year.add(cursor.getString(2));
+                vehicle_no.add(cursor.getString(3));
+                vehicle_details.add(cursor.getString(4));
+                vehicle_insuranceno.add(cursor.getString(5));
+                vehicle_fuel_type.add(cursor.getString(6));
             }
         }
     }

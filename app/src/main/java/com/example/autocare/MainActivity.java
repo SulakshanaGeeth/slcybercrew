@@ -67,5 +67,14 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        LinearLayout aboutUs = (LinearLayout )findViewById(R.id.ll_aboutUs);
+        aboutUs.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent picture_intent = new Intent(MainActivity.this,AboutUs.class);
+                startActivity(picture_intent );
+            }
+        });
+
     }
 }
