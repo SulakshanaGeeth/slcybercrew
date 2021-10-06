@@ -187,6 +187,17 @@
     <string name="btn_fill_up_select">Next</string>
     <string name="tv_fill_up_select_vehicle">Vehicle Model</string>
     <string name="tv_fill_UP_display_model">Vehicle Model</string>
+
     <string name="Earning_input_empty">Enter Daily Earning</string>
+
+    <string name="btn_setalert">Alert</string>
+    <string name="btn_alert45">Alert DO</string>
+    <string name="invalid_name">Please enter name</string>
+    <string name="invalid_date">Please enter date</string>
+    <string name="invalid_mileage">Please enter mileage</string>
+
+
+
+
 
 </resources>
