@@ -10,7 +10,10 @@
 
     <include
         layout="@layout/toolbar2"
-        android:background="@drawable/circle_purple" />
+        android:background="@drawable/circle_purple"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/title_input"
@@ -55,13 +58,23 @@
 
     <Button
         android:id="@+id/add_button"
-        android:layout_width="match_parent"
-        android:layout_height="70dp"
+        android:layout_width="276dp"
+        android:layout_height="60dp"
         android:layout_marginTop="40dp"
         android:text="Add"
-        android:textSize="20sp"
         android:textAllCaps="false"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/mileage_input" />
+
+    <Button
+        android:id="@+id/btn_alert45"
+        android:layout_width="233dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="100dp"
+        android:text="@string/btn_alert45"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/add_button" />
 </androidx.constraintlayout.widget.ConstraintLayout>
