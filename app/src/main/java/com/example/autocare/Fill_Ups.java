@@ -121,10 +121,10 @@ public class Fill_Ups extends AppCompatActivity {
         int endMeter = 0;
 
 
-        for (int i = 0; i < fillUp_price.size(); i++){
+        for (int i = 0; i < fillUp_price.size()-1; i++){
             totalPrice = totalPrice + Integer.parseInt(fillUp_price.get(i));
         }
-        for (int i = 0; i < fillUp_quantity.size(); i++){
+        for (int i = 0; i < fillUp_quantity.size()-1; i++){
             totalQuantity = totalQuantity + Integer.parseInt(fillUp_quantity.get(i));
         }
         for (int i = 0; i < fillUP_meter.size(); i++){

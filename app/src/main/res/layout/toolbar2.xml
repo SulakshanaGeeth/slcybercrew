@@ -26,6 +26,7 @@
             android:text="Car Care"
             android:textColor="@color/white"
             android:textSize="20dp" />
+
         <ImageView
             android:id="@+id/setting_btn"
             android:layout_width="wrap_content"
