@@ -14,27 +14,27 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
-            android:src="@drawable/ic_home" />
+            android:src="@drawable/ic_home"/>
 
         <TextView
             android:id="@+id/toolbar_app_name"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:layout_marginStart="130dp"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
             android:layout_toEndOf="@id/home_btn"
+            android:gravity="center"
             android:text="Car Care"
             android:textColor="@color/white"
             android:textSize="20dp" />
 
         <ImageView
-            android:id="@+id/setting_btn"
+            android:id="@+id/serviceSearch_btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
             android:layout_centerVertical="true"
-            android:src="@drawable/ic_more_vert" />
+            android:src="@drawable/ic_baseline_search" />
     </RelativeLayout>
-
 
 </RelativeLayout>

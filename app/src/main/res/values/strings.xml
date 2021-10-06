@@ -187,5 +187,6 @@
     <string name="btn_fill_up_select">Next</string>
     <string name="tv_fill_up_select_vehicle">Vehicle Model</string>
     <string name="tv_fill_UP_display_model">Vehicle Model</string>
+    <string name="service_input_empty">Cannot submit with empty fields</string>
 
 </resources>

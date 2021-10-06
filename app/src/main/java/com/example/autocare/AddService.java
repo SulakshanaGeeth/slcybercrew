@@ -11,6 +11,10 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.basgeekball.awesomevalidation.AwesomeValidation;
+import com.basgeekball.awesomevalidation.ValidationStyle;
+import com.basgeekball.awesomevalidation.utility.RegexTemplate;
+
 public class AddService extends AppCompatActivity {
     EditText type_input, date_input, description_input, present_input, next_input, cost_input;
     Button addService;
@@ -22,6 +26,8 @@ public class AddService extends AppCompatActivity {
 
         TextView title = findViewById(R.id.toolbar_app_name);
         ImageView backIcon = findViewById(R.id.back_btn);
+
+
         backIcon.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -39,9 +45,20 @@ public class AddService extends AppCompatActivity {
         next_input = findViewById(R.id.input_next);
         cost_input = findViewById(R.id.input_total);
         addService = findViewById(R.id.btn_addService);
+
+        //validations
+        AwesomeValidation awesomeValidation = new AwesomeValidation(ValidationStyle.BASIC);
+        awesomeValidation.addValidation(this,R.id.input_type, RegexTemplate.NOT_EMPTY,R.string.service_input_empty);
+        awesomeValidation.addValidation(this,R.id.input_date, RegexTemplate.NOT_EMPTY,R.string.service_input_empty);
+        awesomeValidation.addValidation(this,R.id.input_description, RegexTemplate.NOT_EMPTY,R.string.service_input_empty);
+        awesomeValidation.addValidation(this,R.id.input_present, RegexTemplate.NOT_EMPTY,R.string.service_input_empty);
+        awesomeValidation.addValidation(this,R.id.input_next, RegexTemplate.NOT_EMPTY,R.string.service_input_empty);
+        awesomeValidation.addValidation(this,R.id.input_total, RegexTemplate.NOT_EMPTY,R.string.service_input_empty);
+
         addService.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                if (awesomeValidation.validate()) {
                 ServiceMyDatabase myDB = new ServiceMyDatabase(AddService.this);
                 myDB.addService(type_input.getText().toString().trim(),
                         date_input.getText().toString().trim(),
@@ -50,6 +67,10 @@ public class AddService extends AppCompatActivity {
                         Integer.valueOf(next_input.getText().toString().trim()),
                         Integer.valueOf(cost_input.getText().toString().trim()));
                 Log.d("name1", type_input.getText().toString().trim());
+                } else {
+                    Toast.makeText(getApplicationContext(), "Validation has been Failed",
+                            Toast.LENGTH_SHORT).show();
+                }
             }
         });
 
