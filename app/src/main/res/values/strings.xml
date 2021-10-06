@@ -198,6 +198,7 @@
     <string name="invalid_name">Please enter name</string>
     <string name="invalid_date">Please enter date</string>
     <string name="invalid_mileage">Please enter mileage</string>
+	<string name="service_input_empty">Cannot submit with empty fields</string>
 
 
 
