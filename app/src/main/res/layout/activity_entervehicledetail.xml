@@ -21,7 +21,7 @@
         android:layout_marginTop="35dp"
         android:text="@string/model2"
         android:textColor="#FFFFFF"
-        android:textSize="14sp"
+        android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/include2" />
 
@@ -32,6 +32,7 @@
         android:layout_marginStart="30dp"
         android:layout_marginTop="35dp"
         android:text="@string/makeyear2"
+        android:textSize="16sp"
         android:textColor="#FFFFFF"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
@@ -45,7 +46,7 @@
         android:inputType="textPersonName"
         android:minHeight="48dp"
         android:text="@string/makeyear"
-        android:textSize="12sp"
+        android:textSize="16sp"
         app:layout_constraintBaseline_toBaselineOf="@+id/textView4"
         app:layout_constraintEnd_toEndOf="parent" />
 
@@ -59,7 +60,7 @@
         android:inputType="textPersonName"
         android:minHeight="48dp"
         android:text="@string/model"
-        android:textSize="12sp"
+        android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/include2" />
 
@@ -70,6 +71,7 @@
         android:layout_marginStart="30dp"
         android:layout_marginTop="35dp"
         android:text="@string/fueltype"
+        android:textSize="16sp"
         android:textColor="#FFFEFE"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
@@ -81,6 +83,7 @@
         android:layout_marginStart="30dp"
         android:layout_marginTop="35dp"
         android:text="Vehicle No."
+        android:textSize="16sp"
         android:textColor="#FFFFFF"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView5" />
@@ -94,7 +97,7 @@
         android:inputType="textPersonName"
         android:minHeight="48dp"
         android:text="@string/licenceno"
-        android:textSize="12sp"
+        android:textSize="16sp"
         app:layout_constraintBaseline_toBaselineOf="@+id/textView7"
         app:layout_constraintEnd_toEndOf="parent" />
 
@@ -105,6 +108,7 @@
         android:layout_marginStart="30dp"
         android:layout_marginTop="35dp"
         android:text="Insuarance No."
+        android:textSize="16sp"
         android:textColor="#FFFFFF"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView7" />
@@ -117,6 +121,7 @@
         android:layout_marginTop="35dp"
         android:text="Vehicle Details"
         android:textColor="#FFFFFF"
+        android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView9" />
 
@@ -129,7 +134,7 @@
         android:inputType="textPersonName"
         android:minHeight="48dp"
         android:text="@string/insuarance"
-        android:textSize="12sp"
+        android:textSize="16sp"
         app:layout_constraintBaseline_toBaselineOf="@+id/textView9"
         app:layout_constraintEnd_toEndOf="parent" />
 
@@ -142,7 +147,7 @@
         android:inputType="textPersonName"
         android:minHeight="48dp"
         android:text="@string/notes"
-        android:textSize="12sp"
+        android:textSize="16sp"
         app:layout_constraintBaseline_toBaselineOf="@+id/textView12"
         app:layout_constraintEnd_toEndOf="parent" />
 
@@ -152,7 +157,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="100dp"
         android:text="Save Detail"
-        app:backgroundTint="#3399FF"
+        app:backgroundTint="@color/button_color"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
@@ -160,11 +165,12 @@
 
     <EditText
         android:id="@+id/et_add_fuel_type"
-        android:layout_width="144dp"
-        android:layout_height="48dp"
+        android:layout_width="182dp"
+        android:layout_height="46dp"
         android:layout_marginEnd="50dp"
         android:ems="10"
         android:inputType="textPersonName"
+        android:textSize="16sp"
         app:layout_constraintBaseline_toBaselineOf="@+id/textView5"
         app:layout_constraintEnd_toEndOf="parent" />
 
