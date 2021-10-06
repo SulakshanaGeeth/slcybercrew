@@ -42,7 +42,7 @@ public class vehicle extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(vehicle.this,"You are going to add fill-up page", Toast.LENGTH_SHORT).show();
+                Toast.makeText(vehicle.this,"You are going to enter vehicle page", Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(vehicle.this,entervehicledetail.class);
                 startActivity(intent);
             }

@@ -191,4 +191,16 @@
     <string name="fill_up_input_quantity">Enter Quantity between 1 to 99</string>
     <string name="fill_up_input_price">Price can be between 1 to 99999</string>
 
+    <string name="Earning_input_empty">Enter Daily Earning</string>
+
+    <string name="btn_setalert">Alert</string>
+    <string name="btn_alert45">Alert DO</string>
+    <string name="invalid_name">Please enter name</string>
+    <string name="invalid_date">Please enter date</string>
+    <string name="invalid_mileage">Please enter mileage</string>
+
+
+
+
+
 </resources>

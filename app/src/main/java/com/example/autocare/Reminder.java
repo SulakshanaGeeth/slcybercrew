@@ -30,7 +30,7 @@ public class Reminder extends AppCompatActivity {
     TextView no_data;
     ImageView empty_imageview;
     Button add_button;
-
+    Button set_alert;
     MyDatabaseHelper myDB;
     ArrayList<String> car_id, car_title, car_date, car_mileage;
     CustomAdapter customAdapter;
@@ -39,9 +39,10 @@ public class Reminder extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_reminder);
+
         recyclerView = findViewById(R.id.recyclerView);
         add_button = findViewById(R.id.btn_plus);
-
+        set_alert = findViewById(R.id.btn_setalert);
 
         TextView title = findViewById(R.id.toolbar_app_name);
         add_button.setOnClickListener(new View.OnClickListener() {
@@ -53,6 +54,17 @@ public class Reminder extends AppCompatActivity {
             }
 
         });
+        set_alert.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Reminder.this, Notification.class);
+
+                startActivity(intent);
+            }
+
+        });
+
+
         myDB = new MyDatabaseHelper(Reminder.this);
         car_id = new ArrayList<>();
         car_title = new ArrayList<>();
@@ -76,16 +88,9 @@ public class Reminder extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        title.setText("Reminder");
 
 
-        Spinner dropdown = findViewById(R.id.spn_select_vehicle);
-//create a list of items for the spinner.
-        String[] items = new String[]{"Vehicle01", "Vehicle02", "Vehicle03"};
-//create an adapter to describe how the items are displayed, adapters are used in several places in android.
-//There are multiple variations of this, but this is the basic variant.
-        ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_dropdown_item, items);
-//set the spinners adapter to the previously created one.
-        dropdown.setAdapter(adapter);
     }
 
     void storeDataInArrays() {
@@ -101,6 +106,7 @@ public class Reminder extends AppCompatActivity {
                 car_mileage.add(cursor.getString(3));
 
             }
+
 
         }
 
